@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
       setUser(response.data);
       setError(null);
       console.log("simon");
-      navigate("/dashboard");
+      navigate("/users");
     } catch (err) {
       setError(err.response?.data?.message || "Error al iniciar sesión");
       setUser(null);
